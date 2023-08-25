@@ -22,6 +22,10 @@ import com.google.android.material.navigation.NavigationBarView;
 import java.util.ArrayList;
 import java.util.List;
 
+import silva.raynan.galeria_publica.Fragment.GridViewFragment;
+import silva.raynan.galeria_publica.Fragment.ListViewFragment;
+import silva.raynan.galeria_publica.Model.MainViewModel;
+
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;

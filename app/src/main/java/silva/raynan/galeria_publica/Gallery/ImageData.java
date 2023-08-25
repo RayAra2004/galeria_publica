@@ -1,4 +1,4 @@
-package silva.raynan.galeria_publica;
+package silva.raynan.galeria_publica.Gallery;
 
 import android.graphics.Bitmap;
 import android.net.Uri;

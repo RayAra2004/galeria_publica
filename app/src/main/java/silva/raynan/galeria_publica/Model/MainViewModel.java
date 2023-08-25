@@ -1,9 +1,11 @@
-package silva.raynan.galeria_publica;
+package silva.raynan.galeria_publica.Model;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+
+import silva.raynan.galeria_publica.R;
 
 public class MainViewModel extends AndroidViewModel {
     int navigationOpSelected = R.id.gridViewOp;
