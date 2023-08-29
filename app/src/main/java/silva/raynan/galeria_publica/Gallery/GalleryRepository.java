@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import silva.raynan.galeria_publica.Image.ImageData;
 import silva.raynan.galeria_publica.R;
 import silva.raynan.galeria_publica.Util.Util;
 
