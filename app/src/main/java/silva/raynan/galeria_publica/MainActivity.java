@@ -113,17 +113,18 @@ public class MainActivity extends AppCompatActivity {
         final MainViewModel vm = new ViewModelProvider(this).get(MainViewModel.class);
 
         bottomNavigationView = findViewById((R.id.btNav));
+        int gridViewOp = R.id.gridViewOp2;
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 vm.setNavigationOpSelected(item.getItemId());
 
                 switch (item.getItemId()){
-                    case R.id.gridViewOp:
+                    case gridViewOp:
                         GridViewFragment gridViewFragment = GridViewFragment.newInstance();
                         setFragment(gridViewFragment);
                         break;
-                    case R.id.listViewOp:
+                    case 2:
                         ListViewFragment listViewFragment = ListViewFragment.newInstance();
                         setFragment(listViewFragment);
                         break;

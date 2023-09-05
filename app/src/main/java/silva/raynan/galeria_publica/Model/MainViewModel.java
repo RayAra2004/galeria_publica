@@ -18,7 +18,7 @@ import silva.raynan.galeria_publica.Image.ImageData;
 import silva.raynan.galeria_publica.R;
 
 public class MainViewModel extends AndroidViewModel {
-    int navigationOpSelected = R.id.gridViewOp;
+    int navigationOpSelected = R.id.gridViewOp2;
     LiveData<PagingData<ImageData>> pageLv;
 
     public MainViewModel(@NonNull Application application){
