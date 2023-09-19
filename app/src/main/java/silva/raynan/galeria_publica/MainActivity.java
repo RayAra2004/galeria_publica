@@ -113,22 +113,30 @@ public class MainActivity extends AppCompatActivity {
         final MainViewModel vm = new ViewModelProvider(this).get(MainViewModel.class);
 
         bottomNavigationView = findViewById((R.id.btNav));
-        int gridViewOp = R.id.gridViewOp2;
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 vm.setNavigationOpSelected(item.getItemId());
-
-                switch (item.getItemId()){
-                    case gridViewOp:
+                int gridViewOp2 = R.id.gridViewOp2;
+                int listViewOp2 = R.id.listViewOp2;
+                System.out.println(item.getItemId());
+                if(R.id.gridViewOp2 == item.getItemId()){
+                    GridViewFragment gridViewFragment = GridViewFragment.newInstance();
+                    setFragment(gridViewFragment);
+                }else if (R.id.listViewOp2 == item.getItemId()){
+                    ListViewFragment listViewFragment = ListViewFragment.newInstance();
+                    setFragment(listViewFragment);
+                }
+                /*switch (item.getItemId()){
+                    case gridViewOp2:
                         GridViewFragment gridViewFragment = GridViewFragment.newInstance();
                         setFragment(gridViewFragment);
                         break;
-                    case 2:
+                    case listViewOp2:
                         ListViewFragment listViewFragment = ListViewFragment.newInstance();
                         setFragment(listViewFragment);
                         break;
-                }
+                }*/
 
                 return false;
             }
