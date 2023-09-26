@@ -33,6 +33,7 @@ public class GalleryRepository {
 
         String[] projection = new String[]{
                 MediaStore.Images.Media._ID,
+                MediaStore.Images.Media.DISPLAY_NAME,
                 MediaStore.Images.Media.DATE_ADDED,
                 MediaStore.Images.Media.SIZE
         };
